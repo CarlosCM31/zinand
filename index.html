@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zinand</title>
-
+    <title>Zinand</title> 
+    <link rel="stylesheet" href="/zinand/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
 rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
 crossorigin="anonymous">
@@ -14,27 +14,43 @@ crossorigin="anonymous">
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+            <img src="/zinand/assets/logo_zinand.svg" href="#">
+          <!--a class="navbar-brand" href="#">Navbar</a>-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Quienes somos</a>
+              <!--a class="nav-link active" aria-current="page" href="#">Quienes somos</a>-->
+              <a class="nav-link" aria-current="page" href="#">Quienes somos</a>
               <a class="nav-link" href="#">Productos</a>
               <a class="nav-link" href="#">Beneficios</a>
               <a class="nav-link" href="#">Precios</a>
+              <a class="nav-link" href="#">Crea tu cuenta</a>
+              <a class="nav-link" href="#">Iniciar sesión</a>
             </div>
           </div>
         </div>
       </nav>
+     <header class="hero">
+       <section class="hero__main container">
+         <div class="hero__text">
+           <h1 class="hero__title"><span>La plataforma</span> que toda startup necesita</h1>
+           <p class="hero__paragraph">Visualiza, entiende y maneja las finanzas de tu empresa de una manera fácil y rápida</p>
+           <ul class="hero__list">
+            <div class="hero__list_item"><img src="/zinand/assets/bullet_check.svg"> <li>Dashboard gráfico e interactivo</li></div>
+            <div class="hero__list_item"><img src="/zinand/assets/bullet_check.svg"> <li>Reportes automatizados</li></div>
+            <div class="hero__list_item"><img src="/zinand/assets/bullet_check.svg"> <li>Pago automático de servicios</li></div>
+           </ul>
+           <div class="login__cta"><a href="#">Comienza ahora</a><img src="/zinand/assets/arrow_button.svg"></div>
+         </div>
+         <div class="about__img">
+           <img src="/zinand/assets/first_image.png">
+         </div>
 
-      <div>
-        <h1>Hola</h1>
-        <p>Lorem ipsum dolor sit amet consectetur.
-        </p>
-      </div>
+       </section>
 
+     </header>
 
 
 
