@@ -5,19 +5,29 @@ body{
 }
 
 *{box-sizing: border-box;}
+
 .hero__main{
     display: flex;
     align-content: center;
     align-items: center;
+    justify-content: space-between;
 }
-
+.hero__title{
+    margin-bottom: 3rem;
+}
 .hero__title span{
     font-weight:600;
 }
-
+.hero__paragraph{
+margin-bottom: 2.5rem;
+}
+.hero__text{
+    width: 35%;
+}
 .hero__list{
     list-style: none;
     padding-left: 0;
+    margin-bottom: 60px;
 }
 
 .hero__list_item{
@@ -31,6 +41,14 @@ body{
     width: 30px;
 }
 
-/* .login__cta{
+.button__solid{
+    background-color:#3343EA ;
+    padding: 15px 30px;
+    border-radius: 30px;
+} 
+.button__solid span{
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 15px;
+}
 
-} */
