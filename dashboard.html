@@ -15,11 +15,12 @@
     <!--<title>Dashboard Sidebar Menu</title>--> 
 </head>
 <body>
+   
     <nav class="sidebar close">
         <header>
             <div class="image-text">
                 <div class="text logo-text">
-                    <img src="/assets/logo_zinand.svg" class="logo">
+                    <img id="logo" src="/assets/logo_zinand.svg" class="logo">
                 </div>
                 <!-- <div class="text logo-text">
                     <span class="name">Codinglab</span>
@@ -28,7 +29,7 @@
             </div>
             <i class='bx bx-chevron-right toggle'></i>
         </header>
-
+    <!--Sidebar-->
         <div class="menu-bar">
             <div class="menu">
 
@@ -108,7 +109,7 @@
 
     </nav>
    
-
+<!--header-->
     <section class="home">
         <div class="user">
         <i class='bx bx-bell icon alerts' ></i>
@@ -118,6 +119,27 @@
     </section>
 
     .home .text
+
+    <div class="card-container">
+        <div class="card-info">
+            <div class="card-txt">
+                <h3>25,000 <span>MXN</span></h3>
+                <h4>Recursos Humanos</h4>
+                <p>3 empleados</p>
+                <button type="button">Agregar empleado</button>
+                <button type="button">Editar presupuesto</button>
+            </div>
+        </div>
+        <div class="card-info">
+            <div class="card-txt">
+                <h3>25,000 <span>MXN</span></h3>
+                <h4>Recursos Humanos</h4>
+                <p>3 empleados</p>
+                <button type="button">Agregar empleado</button>
+                <button type="button">Editar presupuesto</button>
+            </div>
+        </div>
+    </div>  
 
     <script>
         const body = document.querySelector('body'),
@@ -138,12 +160,14 @@ searchBtn.addEventListener("click" , () =>{
 
 modeSwitch.addEventListener("click" , () =>{
     body.classList.toggle("dark");
+    let img = document.getElementById("logo")
     
     if(body.classList.contains("dark")){
         modeText.innerText = "Light mode";
+        img.src="/assets/logo_zinand2.svg"
     }else{
         modeText.innerText = "Dark mode";
-        
+        img.src="/assets/logo_zinand.svg"
     }
 });
     </script>
