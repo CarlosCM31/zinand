@@ -16,27 +16,32 @@ crossorigin="anonymous">
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <img src="assets/logo_zinand.svg" href="#">
-          <!--a class="navbar-brand" href="#">Navbar</a>-->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <!--a class="nav-link active" aria-current="page" href="#">Quienes somos</a>-->
-              <a class="nav-link" aria-current="page" href="#">Quienes somos</a>
-              <a class="nav-link" href="#">Productos</a>
-              <a class="nav-link" href="#">Beneficios</a>
-              <a class="nav-link" href="#">Precios</a>
-              <a class="nav-link" href="#">Crea tu cuenta</a>
-              <a class="nav-link" href="#">Iniciar sesión</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+    
      <header class="hero">
+     <!-- Aqui va el otro navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <figure class="header__img"> <!-- caja 1 -->
+        <img src="/assets/logo_zinand.svg" class="header__picture">
+      </figure>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <!--div class="navbar-nav"--><!-- caja 2 -->
+            <a class="nav-link" aria-current="page" href="#">¿Quiénes Somos?</a>
+            <a class="nav-link" href="#">Productos</a>
+            <a class="nav-link" href="#">Beneficios</a>
+            <a class="nav-link" href="#">Precios</a>
+          <!--/div-->  
+          </div>
+          <div class="header__login"><!-- caja 3 -->
+            <a href="#" class="nav__btt1">Crear cuenta</a>
+            <a href="#" class="nav__btt2">Iniciar sesión</a>
+          </div> 
+        </div>
+      </div>
+    </nav>
        <section class="hero__main container">
          <div class="hero__text">
            <h1 class="hero__title"><span>La plataforma</span> que toda startup necesita</h1>

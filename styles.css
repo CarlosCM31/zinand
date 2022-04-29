@@ -6,6 +6,73 @@ body{
 
 *{box-sizing: border-box;}
 
+/* navbar css */
+.header__main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-size: 14px;
+}
+.nav__link{
+    text-decoration: none;
+    color: black;
+}
+.header__login{
+    padding: 20px 40px;
+    
+}
+.nav__btt1{
+    text-decoration: none;
+    color: #3343EA;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin: 15px;
+    padding: 10px 25px;
+    border:2px solid #3343EA;
+}
+.nav__btt2{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #3343EA;
+    border-radius: 30px;
+    margin: 15px;
+    padding: 10px 25px;
+    
+}
+/* navbar bootstrap css */
+.navbar {
+display: flex;
+align-items: center;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    color: black !important;
+}
+
+.header__img{
+    margin:5px 30px;
+}
+.navbar-nav{
+    padding: 0px;
+    font-size: 16px;
+}
+
+.container-fluid{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between !important;
+}
+
+.navbar-collapse{
+    flex-grow: 0  !important;
+    font-size: 17px;
+    color: black;
+}
+
+/* otro */
 .hero__main{
     display: flex;
     align-content: center;
@@ -52,3 +119,9 @@ margin-bottom: 2.5rem;
     margin-right: 15px;
 }
 
+.about__img{
+    padding-top: 100px;
+    size: 500px;
+    
+
+}
