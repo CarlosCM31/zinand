@@ -45,6 +45,11 @@ body{
 display: flex;
 align-items: center;
 }
+@media only screen and (max-width:768px){
+    .navbar{
+        box-shadow: rgb(226, 226, 226) 0px 5px 10px 3px;
+    }
+    }
 .nav-link{
     display: flex;
     align-items: center;
@@ -74,11 +79,24 @@ align-items: center;
 
 /* otro */
 .hero__main{
-    display: flex;
+  /*   display: flex;
     align-content: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
+    background-image: url(/assets/hero_background-.png);
+    min-height: 100vh;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
 }
+@media only screen and (max-width:768px){
+    .hero__main{
+          background-image:none;
+          }
+    }
 .hero__title{
     margin-bottom: 3rem;
 }
@@ -89,7 +107,13 @@ align-items: center;
 margin-bottom: 2.5rem;
 }
 .hero__text{
-    width: 35%;
+    width: 100%;
+    margin-bottom: 150px;
+}
+@media only screen and (min-width:769px){
+    .hero__text{
+        width: 35%;
+    }
 }
 .hero__list{
     list-style: none;
@@ -122,6 +146,50 @@ margin-bottom: 2.5rem;
 .about__img{
     padding-top: 100px;
     size: 500px;
-    
-
 }
+
+.mobile-button-register{
+    display: block;
+    text-decoration: none;
+    color: #3343EA;
+    padding: 0.5rem 1rem;
+}
+
+.mobile-button-login{
+    display: block;
+    text-decoration: none;
+    color: #3343EA;
+    padding: 0.5rem 1rem;
+}
+.margin{
+    margin:20px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) { }
+
+
+@media only screen and (min-width:769px){
+    .hidden-desktop{
+        display:none !important;
+    }
+    .hidden-tablet{
+        display:none !important;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .hidden-tablet{
+        display:none !important;
+    }
+}
+
+/* @media only screen and (max-width:768px){
+    .hidden-mobile-tablet{
+        display:none !important;
+    }
+}
+ */
+@media only screen and (max-width:768px){
+    .hidden-mobile{
+        display:none !important;
+    }}
